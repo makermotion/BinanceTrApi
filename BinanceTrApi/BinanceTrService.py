@@ -50,7 +50,7 @@ class ApiService:
         :returns: (json) Return requested value from api.
         """
         try:
-            result = sendRequestWithoutAuthorization("open/v1/common/symbols", None, True)
+            result = sendRequestWithoutAuthorization("/open/v1/common/symbols", None, True)
             return result.json()
 
         except Exception:
